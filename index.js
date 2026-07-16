@@ -75,7 +75,58 @@
 // NOT
 // console.log(!true); visa versa if true out put will be false 
 
+// Conditional statemnts 
+//  let a = 15;
+//  let b = 10;
 
+//  if(a>b){
+//     // we can use nested if also here in speacial condition after for that if we have to create one else part also 
+
+//     console.log("A is greater")
+//  }
+//  else if(b>a){
+//     console.log("B is greater");
+    
+//  }
+//  else{
+//     console.log("both are equal");
+    
+//  } 
+  
+// nested if 
+// let age = 18;
+// let name = "manjunath"
+// if(age>=18){
+//     if(name== "manjunath"){
+//     console.log("your are eligible");
+//     }
+//     else{
+//         console.log("Name is not in match");
+//     }
+// }
+// else{
+//     console.log("you are not eligible");
+    
+// }
+
+// let ch = 4;
+// switch(ch){
+//     case 1:
+//         console.log("i m 1"); 
+//         break
+//         //  in this case every case will be printed if i want print only one ,below that case add break for example iam adding break above
+//     case 2:
+//         console.log("i m 2");
+//     case 3:
+//         console.log("i m 3");
+
+//         // if user types more than case defined values for example 4 there is no case 4 defined for that we can give the default saying that you chose wrong number or beyong number iam adding this default here down 
+//         default:
+//             console.log("you chose beyond number ");
+            
+            
+            
+// }
 
 
 
