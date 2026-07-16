@@ -101,11 +101,11 @@
 //     console.log("your are eligible");
 //     }
 //     else{
-//         console.log("Name is not in match");
+//         console.log("Name is not in match"); if you create one if and there must be one more else should be created 
 //     }
 // }
 // else{
-//     console.log("you are not eligible");
+//     console.log("you are not eligible"); in else its not neccesarry to pass the attributes inside like in if () else {}
     
 // }
 
