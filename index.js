@@ -154,6 +154,44 @@
 // } while(i<=10)
 
 
+// Function 
+// function add(a,b){
+//     console.log(a+b);
+// } add(2,3) this is normal function how we usually use 
+// next global and local variable function 
+// let a = 3;
+// function local(){
+//     let b =4;
+//     console.log(a) here b is local where it is define inside the funtion so we cant call it outside like we called out where a is global we can call it anywhere  
+// } local()
+// console.log(b) out put will be undefined 
+
+
+// Return keyword 
+// function add(a,b){
+//       a+b;
+
+// }
+// let result=add(5,3);
+ 
+// console.log(result); result will be undefined because there is no return keyword
+
+// With Return Keyword
+
+// function add(a,b){
+//       return a+b;
+
+// }
+// let result=add(5,3);
+ 
+// console.log(result); the return keyword says return the value from where the keyword has come
+
+// Arrow function 
+
+// let add = (a,b)=> console.log(a+b);
+// add(2,2);  this is arrow function which finishes in one single line of code ,key point to remeber whenever you start the function give the attributes not the values whenever you call the function then you can add the attribute values 
+
+
 
 
 
