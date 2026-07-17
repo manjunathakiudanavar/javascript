@@ -127,6 +127,32 @@
             
             
 // }
+// LOOPS
+// why do we use loops ? to print multiple iterations which this loop helps printing multiple things the syntax as below 
+// here first initialisation i=0 then condition till where the loop should run for example 
+
+// for (i=3;i<=5; i++){
+// console.log(i);
+// // here the i is increment twice
+// i++ 
+// // out put 3,5 without second increment
+
+// }
+// WHILE Loop
+// let i=1;
+// while(i<=10){
+//     console.log(i); this while loop is like you finish the work once the condition is satisfied until and unless dont stop if the condition reaches maximum stop terminate the function 
+//     i++;
+// }
+// DO while Loop
+// let i=1;
+
+// do{
+// console.log(i); in the do while loop the code runs first then it will check for condition , condition is down just check the while syntax 
+// i++;
+
+// } while(i<=10)
+
 
 
 
