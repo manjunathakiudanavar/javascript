@@ -191,6 +191,27 @@
 // let add = (a,b)=> console.log(a+b);
 // add(2,2);  this is arrow function which finishes in one single line of code ,key point to remeber whenever you start the function give the attributes not the values whenever you call the function then you can add the attribute values 
 
+// let num = [1,2,3,4,5,6]
+// console.log(num.slice(3,5))
+
+// in this slice works like chopp the the elements ,from the index whichever you want hence one more (1,4) this slice wroks like start from the index 1 and stop it before 4
+
+// splice
+// let num= [10,20,30,40,50]
+// let removed= num.splice(2,1,100)
+// console.log(removed);
+// console.log(num);
+// this replacing array element 
+// now adding the elements in original array 
+
+// let num = [10,20,30,40,50]
+// let added= num.splice(2,0,100)
+// console.log(added);
+// console.log(num)
+// Key syntax to remember the splice syntax 
+// array.splice(startIndex, deleteCount, item1, item2, ...)
+
+
 
 
 
