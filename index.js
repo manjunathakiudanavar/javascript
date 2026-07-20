@@ -188,8 +188,11 @@
 
 // Arrow function 
 
-// let add = (a,b)=> console.log(a+b);
-// add(2,2);  this is arrow function which finishes in one single line of code ,key point to remeber whenever you start the function give the attributes not the values whenever you call the function then you can add the attribute values 
+// let add = (a,b)=> console.log(a+b)
+// add(2,2);  
+// before arrow function
+
+// this is arrow function which finishes in one single line of code ,key point to remeber whenever you start the function give the attributes not the values whenever you call the function then you can add the attribute values 
 
 // let num = [1,2,3,4,5,6]
 // console.log(num.slice(3,5))
@@ -210,6 +213,61 @@
 // console.log(num)
 // Key syntax to remember the splice syntax 
 // array.splice(startIndex, deleteCount, item1, item2, ...)
+ 
+// let arr =[10,20,30]
+// let result = arr.map(Multiply => Multiply*2+1)
+// console.log(result)
+// let numbers = [2, 4, 6, 8, 10];
+// let result = numbers.map(Multiply=>{return Multiply*5})  if you want to use return key word add flower brackets after arrown function 
+// console.log(result); this map keyword gives you the returned elemnts with modification in the function 
+// this map without map key word and arrow function let numbers = [2, 4, 6, 8, 10];
+
+// let result = [];
+
+// function multiplyBy5(number) {
+//     return number * 5;
+// }
+
+// for (let i = 0; i < numbers.length; i++) {
+//     let value = multiplyBy5(numbers[i]);
+//     result.push(value);
+// }
+
+// console.log(result);
+
+// let prices = [100, 250, 400, 150, 500];
+// let UpdatedPrice = prices.map(updated=>{return updated + 50})
+// console.log(UpdatedPrice)
+
+// Call back function 
+// function washingClothes(callback){
+//     console.log("washing clothes");
+//     callback(); >> tgis call back function will be activated later once the execution of the priorly function that function has another function to call later once the function got executed later another function shouldm be executed hence here this how the callback function executes later after executing first function callback function becomes DryingClothes function so drying clothes function is another function so it will be called later in the first function itslef
+    
+// }
+// function DryingClothes(){
+//     console.log("Drying clothes");
+    
+// } washingClothes(DryingClothes);
+
+
+// ONE more all back function example
+
+// function login(callback) {
+//     console.log("Login Successful");
+
+//     callback();
+// }
+
+// function showDashboard() {
+//     console.log("Dashboard Opened");
+// }
+
+// login(showDashboard); so here you dont have to change the first function everytime to change the feature for example after login you should redirect to home page so it could be hectic to change the whole function hence you add one more function call it in another function after executing the first function easy :-)!
+
+
+
+
 
 
 
