@@ -218,7 +218,7 @@
 // let result = arr.map(Multiply => Multiply*2+1)
 // console.log(result)
 // let numbers = [2, 4, 6, 8, 10];
-// let result = numbers.map(Multiply=>{return Multiply*5})  if you want to use return key word add flower brackets after arrown function 
+// let result = numbers.map(Multiply=>{return Multiply*5})  if you want to use return key word add curly braces after arrown function 
 // console.log(result); this map keyword gives you the returned elemnts with modification in the function 
 // this map without map key word and arrow function let numbers = [2, 4, 6, 8, 10];
 
@@ -265,8 +265,34 @@
 
 // login(showDashboard); so here you dont have to change the first function everytime to change the feature for example after login you should redirect to home page so it could be hectic to change the whole function hence you add one more function call it in another function after executing the first function easy :-)!
 
+// Filter 
+// let num = [10,20,19,15,23,50,25,30,45]
 
+// let filtered = num.filter(fil =>{
+//     if(fil>=10 && fil<=25){
+//         return fil;
+//     }
+// }) 
+// console.log(filtered)
 
+// concat
+// let num1 = [10,20,30,40]
+// let num2= [20,30,40,50]
+// console.log(num1.concat(num2)) (8) [10, 20, 30, 40, 20, 30, 40, 50]
+// for in & for of
+    // let arr =[10,20,30,40]
+    // for( ar in arr){
+    //     console.log(ar)
+    // }
+    // 0,1,2,3 it will print index in the for in 
+
+    // for of
+
+// let arr =[10,20,30,40]
+//     for( ar of arr){
+//         console.log(ar)
+//     }
+    // for prints the values
 
 
 
