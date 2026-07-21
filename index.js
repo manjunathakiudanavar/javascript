@@ -294,6 +294,59 @@
 //     }
     // for prints the values
 
+    // Multidimensional array is array inside the array 
+    // let arr = [
+    //     ["manjjunath",27],
+    //     ["vishwanath",26],
+        
+    // ]
+    // for(ar of arr){ >> this outer loop is to read the inner array note not inner array elements
+    //     for(i of ar){ >> This loop is for to read inner values of the inner array 
+    //         console.log(i); 
+    //     }
+    //}
+  
+
+    // Copy and spread Operator
+    // arr1 = ["manjunath",202,true]
+    // arr2= [...arr1]; 
+    // //  >> for copying array1 to array could be array = array2 which will be copied easily later when you want push something in the array2 it will pushed into array1 also to prevent we use below spread function [...arr1]
+    // arr2.push("Berg")
+    // console.log(arr1);
+    // console.log(arr2);
+    // output ['manjunath', 202, true]
+    // ['manjunath', 202, true, 'Berg']
+
+    // array destructing
+//     let array1=["Thomas","Max","leo","roger"];
+//     let [item1,item2,...item3]=array1
+//     console.log(item1);
+//     console.log(item2);
+//     console.log(item3); 
+//     // ...item3 is the spread operator it turns or concats the array elemnts to one for example
+//     function add(a, b, c) {
+//     return a + b + c;
+// }
+
+// let numbers = [10, 20, 30];
+// Without spread:
+// add(numbers); 
+// Output a = [10,20,30]
+
+// b = undefined
+
+// c = undefined
+// Using Spread
+//  add(...numbers);// javascript changes to this add(10,20,30); 
+//  a = 10
+
+// b = 20
+
+// c = 30
+
+    
+    
+    
 
 
 
