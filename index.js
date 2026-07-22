@@ -300,6 +300,8 @@
     //     ["vishwanath",26],
         
     // ]
+    //  console.log(arr);
+    
     // for(ar of arr){ >> this outer loop is to read the inner array note not inner array elements
     //     for(i of ar){ >> This loop is for to read inner values of the inner array 
     //         console.log(i); 
@@ -318,11 +320,12 @@
     // ['manjunath', 202, true, 'Berg']
 
     // array destructing
-//     let array1=["Thomas","Max","leo","roger"];
-//     let [item1,item2,...item3]=array1
-//     console.log(item1);
-//     console.log(item2);
-//     console.log(item3); 
+    // let array1=["Thomas","Max","leo","roger"];
+    // let [item1,item2,...item3]=array1
+    // console.log(item1);
+    // console.log(item2);
+    // console.log(item3); array destructing is used to 
+    // if you want array elements to be seprated with index it take time for example i want second and third item youll do log.(array1[1],array1[2]) instead if say i do it for 20 items it would be hectic for me soo ill destructing let [item1,item2]=array1 where javascript place it seperatly 
 //     // ...item3 is the spread operator it turns or concats the array elemnts to one for example
 //     function add(a, b, c) {
 //     return a + b + c;
@@ -344,7 +347,66 @@
 
 // c = 30
 
+
+// OBJECT
+// to write object properties we have to follow this property key : "value"
+// let obj = {
+//     "name": "manjunath",
+//     age:22,
+//     "last name": "kiudanavar",
+//     // we can use function also in the object
+//     fun :  function(){
+//         console.log("I m FUNCTION")
+
+//     }
+
+// } 
+// // this is how we call the function 
+// obj.fun()
+// console.log(obj.age) 
+// you can call any of the property using . with variable name
+
+// console.log(obj["name"])
+// // if the key property is "" the we have to use [ brackets to call the particular key]
+// // how do i add one property to object ?
+// obj.key="item"
+// // using the above syntax we can add the property like this
+// console.log(obj)    
+// // if there some other like let a= key2 how to add this property to object ?
+// let a = "key2"
+// obj[a] ="item2"
+
+// // If i want to print all the object properties i mean keys and values ill for in and for of loop 
+// for(let i in obj){
+//     // console.log(i);
+//     // if i want to print vlaues 
+//     console.log(obj[i])
     
+// }
+// // for OF
+// for (let j of Object.keys(obj)){
+//     console.log(obj[j])
+// }
+
+
+//Object Inside array
+// let arr=[
+//     {user:1,name: "Manjunath"},
+//     {user:2,name:"roopa"},
+//     {user:3,name:"vivek"}
+// ] 
+// // for (let i of arr){
+// //     console.log(arr)
+// // }
+
+// // so 
+// let[{name},{name:name1}]=arr;
+// console.log(name)
+// console.log(name1)
+
+// 
+
+
     
     
 
