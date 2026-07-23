@@ -404,7 +404,61 @@
 // console.log(name)
 // console.log(name1)
 
-// 
+// Function inside function
+// function fun(){
+//     console.log("iam function 1");
+//     function fun2(){
+//         console.log("iam function 2");
+        
+//     }
+//     fun2()
+    
+// } fun()
+
+// lexical scope
+
+//  lets take a function 
+// let a = 1;
+    //  it also works when you declare it outside the function hence its because the main function searches the inside its function or out 
+//     debugger;
+// function fun(){
+//     let a= 1;
+
+//     // the a value will add to both the function hence it might outside the function but when declare in side the functions function i mean in second function it wont be lexical scope it will be block scoped 
+//     console.log("iam fun1 :" + a)
+//     function fun2(){
+        
+        
+       
+//         // it wont take the variable because its block scope it can access the inception function variable 
+//         console.log("iam fun2:" + a)
+//     }
+//     fun2();
+// }
+// fun();
+
+// Set is the object which contains special and unique values which cannot be repeated
+// let fruits = new Set([
+//     "Apple",
+//     "Banana",
+//     "Mango",
+//     "Banana",
+//     "Mango"
+// ]);
+// console.log(fruits.size);
+// // we can the leanth of this set using above syntax
+// // using for loop 
+// let length = 0;
+// for (let elements of fruits){
+//     length++;
+// }
+// console.log(length) 
+// // Adding the elements
+// fruits.add("kiwi")
+// console.log(fruits)
+
+
+
 
 
     
