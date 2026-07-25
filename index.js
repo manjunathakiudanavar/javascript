@@ -458,10 +458,88 @@
 // console.log(fruits)
 
 
+// Maps why do we use maps ? becuase when we use objects we store key value pair meanwhile if we are thinking to make it for functions also and for array aslo we need map it stores key value pairs for function also and for arrays also
+
+// let map1 = new Map([["name","manjunath"],["age",27],["arr",[0,1,2,3,4]]])
+// console.log(map1.get("name"))
+// // getting the values
+// map1.set("fname","kiudanavar")
+// // updating the key values 
+// console.log(map1)
+// // what if i want key values ? so ill use for loop 
+// // 
+// let values = map1;
+// for (let val of values){
+//     console.log(values)
+// }
 
 
-
+// this keyword is one of the most use full kewyword where it acts like same remote for multiple functions 
+// Without greet function 
+// let person = {
+//     name: "manjunath",
+//     age : 27,
+//     greet(){
+//         console.log(person.name);
+//     }
+   
     
+// };
+// person.greet()
+
+// // now lets take the another object 
+// let student = {
+//     name: "vishwanath",
+//     age:26,
+//     greet: person.greet 
+//     //this above line says take the function of persons object and copy it here 
+// } 
+// student.greet()
+// the out put will be expecting david but the output will be manjunath and manjunath here cause the will be taken from person object itself to prevent this >>> we use this keyword
+
+// let person = {
+//     name: "manjunath",
+//     age : 27,
+//     greet(){
+//         console.log(this.name);
+//         // this refers to person of the object this >>>person 
+//     }
+   
+    
+// };
+// person.greet()
+
+// // now lets take the another object 
+// let student = {
+//     name: "vishwanath",
+//     age:26,
+//     greet: person.greet 
+//     // >> now here this refers to student here  
+//     //this above line says take the function of persons object and copy it here 
+// } 
+// student.greet()
+// instead of creating multiple function of multiple objects we use this keyword ,it acts like one remote for multiple functions
+
+
+//     class Student {
+
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+
+//     introduce() {
+//         console.log("My name is " + this.name);
+//         console.log("My age is " + this.age);
+//     }
+
+// }
+
+// let student1 = new Student("John", 20);
+// let student2 = new Student("David", 22);
+
+// student1.introduce();
+// student2.introduce();
     
 
 
