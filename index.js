@@ -606,6 +606,25 @@
 // its like the press button 
 
 
+// Asynchronous is the function where it executes after the priority execution hence its called Asynchronous function 
+
+// console.log("hi")
+// console.log("iam")
+// console.log("manjunath")
+// Output will be hi iam manjunath
+// but when we add Asynchronous function 
+//    setTimeout(()=>{
+//    console.log("hi")
+//    },0)
+
+// setTimeout(fun, 5000)
+// function fun(){
+// console.log("manjunath")
+// }
+
+// console.log("iam")
+
+
 
 
 
