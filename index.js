@@ -541,10 +541,63 @@
 // student1.introduce();
 // student2.introduce();
     
+// Constructor () is a function which holds the properties 
+
+// function User(name){
+    
+//     this.name=name
+// }
+// let person = new User("manjunath");
+// console.log(person.name)
+
+// Symbol is the identifier whic produces unique property
+
+// without Symbol 
+// let product ={
+//     brand: "iphone",
+//     price: 80000,
+//     Views: 2
+// }
 
 
+// // hence if another developer overwrites the property 
+// function Analytics(product){
+//     product.Views = 300;
+//     console.log(product.Views);
+    
+// } 
+// Analytics(product the original values is gone this is clled name collision 
+
+// hence with Symbole datatype
+// let Views = Symbol("Views")
+// let product ={
+//     brand: "iphone",
+//     price: 80000,
+//     [Views]: 2
+// }
+// console.log(product[Views]);
 
 
+// // hence if another developer overwrites the property 
+// function Analytics(product){
+//     product.Views = 300;
+//     console.log(product.Views);
+    
+// } 
+// Analytics(product) 
+//  hence here with symbol Data type we can prevent name collision out put 2,300 //
+
+
+function fact(n) {
+
+    if (n == 0) {
+        return 1;
+    }
+
+    return n * fact(n - 1);
+}
+
+console.log(fact(3));
 
 
 
