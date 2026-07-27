@@ -590,20 +590,21 @@
 
 // Recursion is the function which calls itself
 
-function fact(n) {
+// function fact(n) {
 
-    if (n == 0) {
-        return 1;
-        // once the fact(0) reaches to 0 it calls return 1 where it returns to fact(1) after returning 1 else block function will get the answer 1
-    }
+//     if (n == 0) {
+//         return 1;
+//         // once the fact(0) reaches to 0 it calls return 1 where it returns to fact(1) after returning 1 else block function will get the answer 1
+//     }
 
-    return n * fact(n - 1);
-    // when it reaches fact(1) from the return 1 it becomes return 1 again it becomes return 2 * fact(1) becuase javascript knows how did i calculated it before when return 3*(n-1)>> it would become 3*(2) it goes where javascript knows that executed it
-    // return here ? Job: Send the calculated factorial back to the previous function call.
-}
+//     return n * fact(n - 1);
+//     // when it reaches fact(1) from the return 1 it becomes return 1 again it becomes return 2 * fact(1) becuase javascript knows how did i calculated it before when return 3*(n-1)>> it would become 3*(2) it goes where javascript knows that executed it
+//     // return here ? Job: Send the calculated factorial back to the previous function call.
+// }
 
-console.log(fact(10));
+// console.log(fact(10));
 // its like the press button 
+
 
 
 
