@@ -632,6 +632,7 @@ function fun(task) {
 
         if (task) {
             resolve("Completed");
+            // You call this function using resolve("completed") function greet() greet("manjnunath") in the resolve function which is creted internally by javascript which is passed like resolve , reject thos are the function crewted by javascript so youre passing the functions inside the promise as parameters those functions contains code where when you call them giving the attribute resolve("completed") 
         } else {
             reject("Not Completed");
         }
