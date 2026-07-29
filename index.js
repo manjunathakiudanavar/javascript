@@ -626,6 +626,47 @@
 
 
 
+// Promises
+function fun(task) {
+    return new Promise((resolve, reject) => {
+
+        if (task) {
+            resolve("Completed");
+        } else {
+            reject("Not Completed");
+        }
+
+    });
+}
+
+let onResolve = (res) => {
+    console.log(res);
+}
+
+let onReject = (err) => {
+    console.log(err);
+}
+
+fun(true).then(onResolve).catch(onReject);
 
 
 
+// this is the internal resolve function 
+function Promise(callback) {
+
+    let promise = {
+        state: "Pending",
+        result: undefined
+    };
+
+    function resolve(value) {
+
+        promise.state = "Fulfilled";
+        promise.result = value;
+
+    }
+
+    callback(resolve);
+
+    return promise;
+}
