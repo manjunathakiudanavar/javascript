@@ -627,47 +627,74 @@
 
 
 // Promises
-function fun(task) {
-    return new Promise((resolve, reject) => {
+// function fun(task) {
+//     return new Promise((resolve, reject) => {
 
-        if (task) {
-            resolve("Completed");
-            // You call this function using resolve("completed") function greet() greet("manjnunath") in the resolve function which is creted internally by javascript which is passed like resolve , reject thos are the function crewted by javascript so youre passing the functions inside the promise as parameters those functions contains code where when you call them giving the attribute resolve("completed") 
-        } else {
-            reject("Not Completed");
+//         if (task) {
+//             resolve("Completed");
+//             // You call this function using resolve("completed") function greet() greet("manjnunath") in the resolve function which is creted internally by javascript which is passed like resolve , reject thos are the function crewted by javascript so youre passing the functions inside the promise as parameters those functions contains code where when you call them giving the attribute resolve("completed") 
+//         } else {
+//             reject("Not Completed");
+//         }
+
+//     });
+// }
+
+// let onResolve = (res) => {
+//     console.log(res);
+// }
+
+// let onReject = (err) => {
+//     console.log(err);
+// }
+
+// fun(true).then(onResolve).catch(onReject);
+
+
+
+// // this is the internal resolve function conceptual code
+// function Promise(callback) {
+
+//     let promise = {
+//         state: "Pending",
+//         result: undefined
+//     };
+
+//     function resolve(value) {
+
+//         promise.state = "Fulfilled";
+//         promise.result = value;
+
+//     }
+
+//     callback(resolve); 
+
+//     return promise;
+// }
+
+
+// promise practise seesion 
+
+function fun(task){
+    return new Promise((resolve,reject)=>{
+        //  in the return keyword first right side statement will be executed
+        // hence after resolve the the promise object becomes status:fullfilled,value:complete; which will be returned to the to fun (true or false) calling function below 
+        // here resolve and reject are the call back funtions where javascript will be already created for us resolve and reject function 
+        if(task){
+            resolve("complete");
+            // this the calling the call back function with parameter "complete " where function resolve becomes resolve("complete") just like greet("manjunath") hence console.log ("manjunath") same resolve("complete") console.log ("complete")
         }
-
+        else{
+            reject("incomplete");
+        }
     });
 }
-
-let onResolve = (res) => {
+let OnResolve= (res)=>{
     console.log(res);
-}
-
-let onReject = (err) => {
-    console.log(err);
-}
-
-fun(true).then(onResolve).catch(onReject);
-
-
-
-// this is the internal resolve function 
-function Promise(callback) {
-
-    let promise = {
-        state: "Pending",
-        result: undefined
-    };
-
-    function resolve(value) {
-
-        promise.state = "Fulfilled";
-        promise.result = value;
-
-    }
-
-    callback(resolve);
-
-    return promise;
-}
+    // these are the functions stored in the variable so we can use these later if we want 
+};
+let = OnReject=(rej)=>{
+    console.log(rej)
+};
+fun(!true).then(OnResolve).catch(OnReject);
+// the() this inbuilt keyword uses conceptual function where it will be having promise result complete or incomplete so to access the promise object we use then ()
