@@ -697,4 +697,4 @@ let = OnReject=(rej)=>{
     console.log(rej)
 };
 fun(!true).then(OnResolve).catch(OnReject);
-// the() this inbuilt keyword uses conceptual function where it will be having promise result complete or incomplete so to access the promise object we use then ()
+// then() this inbuilt keyword uses conceptual function where it will be having promise result complete or incomplete so to access the promise object we use then ()
