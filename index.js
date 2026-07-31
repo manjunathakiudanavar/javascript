@@ -675,26 +675,113 @@
 
 // promise practise seesion 
 
-function fun(task){
-    return new Promise((resolve,reject)=>{
-        //  in the return keyword first right side statement will be executed
-        // hence after resolve the the promise object becomes status:fullfilled,value:complete; which will be returned to the to fun (true or false) calling function below 
-        // here resolve and reject are the call back funtions where javascript will be already created for us resolve and reject function 
-        if(task){
-            resolve("complete");
-            // this the calling the call back function with parameter "complete " where function resolve becomes resolve("complete") just like greet("manjunath") hence console.log ("manjunath") same resolve("complete") console.log ("complete")
-        }
-        else{
-            reject("incomplete");
-        }
-    });
-}
-let OnResolve= (res)=>{
-    console.log(res);
-    // these are the functions stored in the variable so we can use these later if we want 
-};
-let = OnReject=(rej)=>{
-    console.log(rej)
-};
-fun(!true).then(OnResolve).catch(OnReject);
-// then() this inbuilt keyword uses conceptual function where it will be having promise result complete or incomplete so to access the promise object we use then ()
+// function fun(task){
+//     return new Promise((resolve,reject)=>{
+//         //  in the return keyword first right side statement will be executed
+//         // hence after resolve the the promise object becomes status:fullfilled,value:complete; which will be returned to the to fun (true or false) calling function below 
+//         // here resolve and reject are the call back funtions where javascript will be already created for us resolve and reject function 
+//         if(task){
+//             resolve("complete");
+//             // this the calling the call back function with parameter "complete " where function resolve becomes resolve("complete") just like greet("manjunath") hence console.log ("manjunath") same resolve("complete") console.log ("complete")
+//         }
+//         else{
+//             reject("incomplete");
+//         }
+//     });
+// }
+// let OnResolve= (res)=>{
+//     console.log(res);
+//     // these are the functions stored in the variable so we can use these later if we want 
+// };
+// let = OnReject=(rej)=>{
+//     console.log(rej)
+// };
+// fun(!true).then(OnResolve).catch(OnReject);
+// // then() this inbuilt keyword uses conceptual function where it will be having promise result complete or incomplete so to access the promise object we use then ()
+
+
+// // imagine 
+
+// function loadingData(){
+//     return new Promise((resolve,reject)=>{
+//         console.log("Processing")
+//         setTimeout(() => {
+//             console.log("Loading the data");
+//             resolve();
+            
+//         },3000);
+//     })
+// }
+
+// function CollectingData(){
+//        return new Promise((resolve,reject)=>{
+      
+//         setTimeout(() => {
+//             console.log("Collecting the data")
+//             resolve();
+//         }, 2000);
+        
+//        });
+  
+// }
+
+// function approvingData(){
+//     return new Promise((resolve,reject)=>{
+//      setTimeout(() => {
+//         console.log("Approving the data")
+//         resolve();
+//      }, 1000);
+       
+//     })
+
+// }
+
+// function approved(){
+//     return new Promise((resolve,reject)=>{
+//         console.log("aproved");
+        
+//         resolve();
+//     })
+// }
+// // loadingData().then(CollectingData).then(approvingData).then(approved).catch((err)=>{
+// //     console.log(err);
+    
+// // });
+// async function process() {
+
+//     await loadingData();
+//     await CollectingData();
+//     await approvingData();
+//     await approved()
+
+// }
+// process()
+// we use these kinda async await functions to call the promise object chaining would be very messy 
+
+// // The pattern to remember
+
+// Whenever you see:
+
+// (parameters) => {
+
+// }
+
+// you can mentally replace it with:
+
+// function (parameters) {
+
+// }
+
+// So:
+
+// (resolve, reject) => {
+
+// }
+
+// is simply:
+
+// function (resolve, reject) {
+
+// }
+
+// The only difference is the syntax. The behavior is the same.
