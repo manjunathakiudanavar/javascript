@@ -785,3 +785,28 @@
 // }
 
 // The only difference is the syntax. The behavior is the same.
+
+// call this is the keyword which calls the first property function to another object 
+
+
+// let obj={
+//     name: "manjunath",
+//     age:27,
+//     greet: function (){
+//         console.log(this.name)
+//     }
+// };
+// let obj2={
+//     name:"jhon",
+// };
+// obj.greet.call(obj2);
+//  read it like english call the induce the first object function to the second object
+function greet(city,country){
+    console.log(this.name,city,country)
+}
+let obj1={
+    name:"jhon",
+};
+
+
+greet.apply(obj1,["banaglore","India"]);
