@@ -801,12 +801,47 @@
 // };
 // obj.greet.call(obj2);
 //  read it like english call the induce the first object function to the second object
-function greet(city,country){
-    console.log(this.name,city,country)
-}
-let obj1={
-    name:"jhon",
-};
+// function greet(city,country){
+//     console.log(this.name,city,country)
+// }
+// let obj1={
+//     name:"jhon",
+// };
 
 
-greet.apply(obj1,["banaglore","India"]);
+// greet.apply(obj1,["banaglore","India"]);
+
+// function greet(){
+//     console.log(this.name);
+// }
+
+
+// binding to one or another objects
+// let obj={
+//     name:"manjunath"
+
+// }
+// let obj1={
+//     name:"vishwanath"
+// }
+
+// let call = greet.bind(obj);
+// call();
+ 
+let obj={}
+   obj.name="manjunath";
+   
+   console.log(Object.getOwnPropertyDescriptor(obj,"name"));
+
+Object.defineProperty(obj,"age",
+    {
+        value:27,
+        writable:false,
+        configurable:true,
+        enumerable:true 
+    }
+);
+value=21;
+console.log(Object.getOwnPropertyDescriptor(obj,"age"));
+
+
