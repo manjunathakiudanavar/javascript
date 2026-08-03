@@ -859,5 +859,58 @@
 // )
 
 
+// proto
+
+// let say 
+ 
+// let obj ={
+//     fName:"manjunath"
+// }
+
+//  let obj1={
+//     lName:"vishwanath"
+//  }
+
+//  obj1.__proto__=obj;
+//  console.log(obj1.fName)
+//  this proto takes the referance of the ofnthe another object 
+// 
+
+//  creating empty object
+
+// let obj = {
+//     fName:"manjunath"
+// }
+// let obj1= Object.create(obj);
+// obj1.lName="Vishwanath"
+// console.log(obj1.fName)
+
+// CLASS
+
+// class student{
+//     constructor(name,age){
+//         this.name=name;
+//         this.age=age;
+//     }
+//     sayHi(){
+//         console.log( "hi",this.name,this.age)
+//     }
+// }
+// let student1=new student("jhon",27);
+// let student2=new student("cena",33)
+
+// student1.sayHi()
+// student2.sayHi()
+//  this keyword refers to the object who calls the function 
+// whoever for example object.name before dot it becomes this which refers to the object
+
+ 
+
+
+
+
+
+
+
 
 
