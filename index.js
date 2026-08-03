@@ -827,21 +827,37 @@
 
 // let call = greet.bind(obj);
 // call();
- 
-let obj={}
-   obj.name="manjunath";
-   
-   console.log(Object.getOwnPropertyDescriptor(obj,"name"));
 
-Object.defineProperty(obj,"age",
-    {
-        value:27,
-        writable:false,
-        configurable:true,
-        enumerable:true 
-    }
-);
-value=21;
-console.log(Object.getOwnPropertyDescriptor(obj,"age"));
+// property flags and discriptor 
+ 
+// let obj={}
+//    obj.name="vishwanath"
+   
+   
+//    console.log(Object.getOwnPropertyDescriptor(obj,"name"));
+
+//  Object.defineProperty(obj,"age",
+//     {
+//         value:27,
+//         writable:false,
+//         configurable:true,
+//         enumerable:true 
+//     }
+    
+        
+    
+// );
+// value=21;
+// console.log(Object.getOwnPropertyDescriptor(obj,"age"));obj.name="manjunath";
+//    Object.defineProperty(obj,"name",
+//     {
+       
+//         writable:false,
+//         configurable:true,
+//         enumerable:true 
+//     }
+// )
+
+
 
 
