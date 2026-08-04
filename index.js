@@ -975,6 +975,10 @@ let game = new Game();
 game.start();
 
 game.end();
+game.end();
+game.end();
+game.end();
+game.end();
 
 
 
