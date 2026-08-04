@@ -904,7 +904,39 @@
 //  this keyword refers to the object who calls the function 
 // whoever for example object.name before dot it becomes this which refers to the object
 
- 
+
+// Inheritance
+//  lets take one example here 
+class Animal {
+    constructor(name){
+        this.name = name;
+    }
+    bark(){
+        console.log(`${this.name}  is barking`)
+    }
+    sing(){
+         console.log(`${this.name}  meow meow`)
+    }
+}
+// let dog= new Animal("mothi");
+// dog.bark()
+// lets say if i take one more class 
+ class Dog extends Animal{
+    constructor(name){
+        super(name);
+    }
+ }
+ let dog1=new Animal("jimmy")
+ dog1.bark()
+
+ class cat extends Animal{
+    constructor(){
+        super(name);
+    }
+
+ }
+let c = new Animal(" toku ");
+c.sing()
 
 
 
