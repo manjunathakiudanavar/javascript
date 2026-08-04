@@ -907,37 +907,74 @@
 
 // Inheritance
 //  lets take one example here 
-class Animal {
-    constructor(name){
-        this.name = name;
+// class Animal {
+//     constructor(name){
+//         this.name = name;
+//     }
+//     bark(){
+//         console.log(`${this.name}  is barking`)
+//     }
+//     sing(){
+//          console.log(`${this.name}  meow meow`)
+//     }
+// }
+// // let dog= new Animal("mothi");
+// // dog.bark()
+// // lets say if i take one more class 
+//  class Dog extends Animal{
+//     constructor(name){
+//         super(name);
+//     }
+//  }
+//  let dog1=new Animal("jimmy")
+//  dog1.bark()
+
+//  class cat extends Animal{
+//     constructor(){
+//         super(name);
+//     }
+
+//  }
+// let c = new Animal(" toku ");
+// c.sing()
+
+
+// Static keyword
+
+class Game {
+
+    static score = 0;
+
+    constructor() {
+       
+        this.isPlaying = false;
     }
-    bark(){
-        console.log(`${this.name}  is barking`)
+
+    start() {
+        
+        this.isPlaying = true;
+        console.log("The game has started");
     }
-    sing(){
-         console.log(`${this.name}  meow meow`)
+
+    end() {
+       
+        this.isPlaying = false;
+        console.log("The game has ended");
+        Game.updateScore();
     }
+
+    static updateScore() {
+        Game.score++;
+        console.log(`Score : ${Game.score}`);
+    }
+
 }
-// let dog= new Animal("mothi");
-// dog.bark()
-// lets say if i take one more class 
- class Dog extends Animal{
-    constructor(name){
-        super(name);
-    }
- }
- let dog1=new Animal("jimmy")
- dog1.bark()
 
- class cat extends Animal{
-    constructor(){
-        super(name);
-    }
+let game = new Game();
 
- }
-let c = new Animal(" toku ");
-c.sing()
+game.start();
 
+game.end();
 
 
 
