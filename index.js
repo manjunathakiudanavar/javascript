@@ -941,44 +941,49 @@
 
 // Static keyword
 
-class Game {
+// class Game {
 
-    static score = 0;
+//     static score = 0;
 
-    constructor() {
+//     constructor() {
        
-        this.isPlaying = false;
-    }
+//         this.isPlaying = false;
+//     }
 
-    start() {
+//     start() {
         
-        this.isPlaying = true;
-        console.log("The game has started");
-    }
+//         this.isPlaying = true;
+//         console.log("The game has started");
+//     }
 
-    end() {
+//     end() {
        
-        this.isPlaying = false;
-        console.log("The game has ended");
-        Game.updateScore();
-    }
+//         this.isPlaying = false;
+//         console.log("The game has ended");
+//         Game.updateScore();
+        //    to call the update score fucntion i mean update score function is static where we can call static function like classname.function
+//     }
 
-    static updateScore() {
-        Game.score++;
-        console.log(`Score : ${Game.score}`);
-    }
+//     static updateScore() {
+//         Game.score++;
+//         we add anyof the static through classname.static variable 
+//         console.log(`Score : ${Game.score}`);
+//     }
 
-}
+// }
 
-let game = new Game();
+// let game = new Game();
 
-game.start();
+// game.start();
 
-game.end();
-game.end();
-game.end();
-game.end();
-game.end();
+// game.end();
+// game.end();
+// game.end();
+// game.end();
+// game.end();
+
+// public and private class 
+
 
 
 
