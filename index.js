@@ -1009,7 +1009,7 @@ account.deposite(1000)
 account.withdraw(100)
 account.deposite(2000)
 
-account.balance();
+account.balance
 
 class Account extends BankAccount{
     
@@ -1017,7 +1017,7 @@ class Account extends BankAccount{
 }
 let Account1=new BankAccount()
 Account1.deposite(100)
-Account1.balance()
+Account1.balance
 
 
 
