@@ -984,6 +984,45 @@
 
 // public and private class 
 
+class BankAccount {
+    #balance =0;
+    deposite(amount){
+        this.#balance+=amount;
+        console.log(`Deposited amount ${amount},current balance ${this.#balance}`);
+    }
+    withdraw(amount){
+        if(amount>this.#balance){
+            console.log("insufficient fund");
+            
+        }
+        else{
+                 this.#balance-=amount;
+                 console.log(`withdraw amount ${amount},current balance ${this.#balance}`);
+            }
+    }
+    balance(){
+        console.log(this.#balance);
+    }
+}
+let account = new BankAccount();
+account.deposite(1000)
+account.withdraw(100)
+account.deposite(2000)
+
+account.balance();
+
+class Account extends BankAccount{
+    
+
+}
+let Account1=new BankAccount()
+Account1.deposite(100)
+Account1.balance()
+
+
+
+
+
 
 
 
