@@ -984,42 +984,61 @@
 
 // public and private class 
 
-class BankAccount {
-    #balance =0;
-    deposite(amount){
-        this.#balance+=amount;
-        console.log(`Deposited amount ${amount},current balance ${this.#balance}`);
-    }
-    withdraw(amount){
-        if(amount>this.#balance){
-            console.log("insufficient fund");
+// class BankAccount {
+//     #balance =0; we use hash everywhere for defining the private class 
+//     deposite(amount){
+//         this.#balance+=amount;
+//         console.log(`Deposited amount ${amount},current balance ${this.#balance}`);
+//     }
+//     withdraw(amount){
+//         if(amount>this.#balance){
+//             console.log("insufficient fund");
             
-        }
-        else{
-                 this.#balance-=amount;
-                 console.log(`withdraw amount ${amount},current balance ${this.#balance}`);
-            }
-    }
-    balance(){
-        console.log(this.#balance);
-    }
-}
-let account = new BankAccount();
-account.deposite(1000)
-account.withdraw(100)
-account.deposite(2000)
+//         }
+//         else{
+//                  this.#balance-=amount;
+//                  console.log(`withdraw amount ${amount},current balance ${this.#balance}`);
+//             }
+//     }
+//     balance(){
+//         console.log(this.#balance);
+//     }
+// }
+// let account = new BankAccount();
+// account.deposite(1000)
+// account.withdraw(100)
+// account.deposite(2000)
 
-account.balance
+// account.balance
 
-class Account extends BankAccount{
+// class Account extends BankAccount{
     
 
-}
-let Account1=new BankAccount()
-Account1.deposite(100)
-Account1.balance 
+// }
+// let Account1=new BankAccount()
+// Account1.deposite(100)
+// Account1.balance 
 // 
-// git
+
+// Fetch API
+fetch("https://jsonplaceholder.typicode.com/posts")
+// after pasting the link it'll create a promise remeber conceptual javascript code ?with response ok
+.then(response=>{
+    // only when response is oaky then it comes to .then and ifResponse.ok status will be ok itll will execute next line of the !ifResponse.ok it will execute the error line where  becuase not equal status :false => !false then it shows true where if conditon execute the true condition  
+    if(!response.ok){
+        throw new Error("Network is not responding")
+    }
+    return response.json();
+    // again it returns one more promise to here this line converts json to javascript data 
+
+})
+.then(data=>data.forEach(element=>{
+    //  to access that we use this line 
+    console.log(element.title);
+}))
+.catch(error=> console.error(error));
+//  this line is to catch the errors if network is down or response is not ok 
+
 
 
 
