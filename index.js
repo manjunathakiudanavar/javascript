@@ -1019,6 +1019,7 @@ let Account1=new BankAccount()
 Account1.deposite(100)
 Account1.balance 
 // 
+// git
 
 
 
